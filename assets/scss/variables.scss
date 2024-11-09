@@ -124,6 +124,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --tr-even-background-color: #efefee;
 
     --kbd-border-color: #dadada;
+    --emphasize-text-color: #9e8f9f; // Add emphasize font color
 
     &[data-scheme="dark"] {
         --code-background-color: #272822;
@@ -133,6 +134,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
         --tr-even-background-color: #545454;
 
         --blockquote-background-color: rgb(75 75 75);
+        --emphasize-text-color: #d5cfc4; // Add emphasize font color for dark scheme
     }
 }
 
