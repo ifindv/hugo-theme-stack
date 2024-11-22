@@ -34,6 +34,12 @@
                     {{ T "article.readingTime" .ReadingTime }}
                 </time>
             </div>
+            <div>
+                {{ partial "helper/icon" "words-count" }} 
+                <time class="article-words">
+                    {{ .WordCount }}字
+                </time>
+            </div>
         {{ end }}
     </footer>
     {{ end }}
