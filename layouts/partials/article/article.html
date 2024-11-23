@@ -1,4 +1,4 @@
-<article class="{{ if .Params.image }}has-image {{ end }}{{ if not .IsPage "link" }}main-article{{ end }}">
+<article class="{{ if .Params.image }}has-image {{ end }} {{ if not .Params.nomain }} main-article {{end}}">
     {{ if .Params.header }}
         {{ partial "article/components/header" . }}
     {{ end }}
