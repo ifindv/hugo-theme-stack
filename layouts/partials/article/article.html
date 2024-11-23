@@ -1,9 +1,13 @@
 <article class="{{ if .Params.image }}has-image {{ end }}{{ if not .IsPage "link" }}main-article{{ end }}">
-    {{ partial "article/components/header" . }}
+    {{ if .Params.header }}
+        {{ partial "article/components/header" . }}
+    {{ end }}
 
     {{ partial "article/components/content" . }}
 
-    {{ partial "article/components/footer" . }}
+    {{ if .Params.footer }}
+        {{ partial "article/components/footer" . }}
+    {{ end }}
 
     {{ if or .Params.math .Site.Params.article.math }}
         {{ partialCached "article/components/math.html" . }}
