@@ -1,11 +1,11 @@
 <article class="{{ if .Params.image }}has-image {{ end }} {{ if not .Params.nomain }} main-article {{end}}">
-    {{ if .Params.header }}
+    {{ if not .Params.noheader }}
         {{ partial "article/components/header" . }}
     {{ end }}
 
     {{ partial "article/components/content" . }}
 
-    {{ if .Params.footer }}
+    {{ if not .Params.nofooter }}
         {{ partial "article/components/footer" . }}
     {{ end }}
 
