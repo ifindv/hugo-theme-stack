@@ -14,7 +14,6 @@
                 {{- $hasWidget = true -}}
             {{- end -}}
         {{- end -}}
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Ukenn2112/UkennWeb@3.0/index/web.js"></script>
         <div class="container main-container flex on-phone--column {{ if $hasWidget }}extended{{ else }}compact{{ end }}">
             {{- block "left-sidebar" . -}}
                 {{ partial "sidebar/left.html" . }}
